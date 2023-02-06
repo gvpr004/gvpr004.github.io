@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>CONcerto</h1>
+    <!-- navigation bar-->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" onclick="redirect('index')"><span>Home</span></a>
+        <a href="#Gallery" onclick="redirect('gallery')"><span>Galleria</span></a>
+        <a href="#Concerti" onclick="redirect('concerts')"><span>Concerti</span></a>
+        <a href="#contact" class="active" onclick="redirect('contact')"><span>Contatti</span></a>
+        <a href="#about" onclick="redirect('about')"><span>Documentazione</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="addRemoveResponsiveClass()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--end navigation bar-->
+
+
+    <h3>Contattaci</h3>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="inserisci il nome">
+
+            <label for="lname">Cognome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Inserisci il cognome">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/slideshow.js"></script>
+</body>
+<footer>
+    <p style="text-align:center">ⓒCopyright CONcerto 2023</p>
+    <p style="text-align:center">Potete contattarmi alla seguente mail: <a href="mailto:gvpr004@libero.it">gvpr004@libero.it</a></p>
+    <p style="text-align:center">o su IG: <a href="https://www.instagram.com/con__certo/">con__certo</a></p>
+  </footer>
+
+</html>

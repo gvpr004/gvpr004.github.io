@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CONcerto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>CONcerto</h1>
+    <!-- navigation bar-->
+  <div class="topnav" id="myTopnav">
+        <a href="#home" class="active" onclick="redirect('index')"><span>Home</span></a>
+        <a href="#Gallery" onclick="redirect('gallery')"><span>Galleria</span></a>
+        <a href="#Concerti" onclick="redirect('concerts')"><span>Concerti</span></a>
+        <a href="#contact" onclick="redirect('contact')"><span>Contatti</span></a>
+        <a href="#about" onclick="redirect('about')"><span>Documentazione</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="addRemoveResponsiveClass()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!--end navigation bar-->
+
+  <!--slideshow-->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="../images/0.png" style="width: 100%;height: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../images/1.png" style="width: 100%;height: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../images/2.png" style="width: 100%;height: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="../images/3.png" style="width: 100%;height: 100%;">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <!--end slideshow-->
+
+  <div class="About">
+    <h2>Perchè ho voluto creare questo sito?</h2>
+    <div class="about">
+      <p style="font-size: 24px;">Quanto spesso ti capita di voler andare ad un concerto di un artista che non piace a nessuno dei tuoi amici?
+        A me capita davvero frequentemente, e sì… Andare ad un concerto da soli è un'esperienza da provare ma condividerla con qualcuno la rende ancora più bella.
+        Meglio soli che mal accompagnati… Ma non con CONcerto!
+        Da oggi troverai finalmente la persona giusta con cui andare al concerto che aspettate da tutto l'anno.</p>
+        <img src="../images/Photo6.png" style="width: 100%;max-height: 100%;">
+    </div>
+  </div>
+  <br>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/slideshow.js"></script>
+</body>
+<footer>
+  <p style="text-align:center">ⓒCopyright CONcerto 2023</p>
+  <p style="text-align:center">Potete contattarmi alla seguente mail: <a href="mailto:gvpr004@libero.it">gvpr004@libero.it</a></p>
+  <p style="text-align:center">o su IG: <a href="https://www.instagram.com/con__certo/">con__certo</a></p>
+</footer>
+
+</html>
