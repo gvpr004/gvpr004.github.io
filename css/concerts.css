@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
     .card {
         grid-template-columns: 25% 50% 25%;
     }
